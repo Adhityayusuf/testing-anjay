@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class belajar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double nilai;
+        double nilai, rata = 0, total ;
         int lulus = 0, tdkLulus = 0;
 
         for (int i = 1; i <= 10; i++) {
