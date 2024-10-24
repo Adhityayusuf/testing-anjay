@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class uts {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n,m, nilai = 0, total = 0;
+        int n,m,total = 1;
 
         System.out.print("Nilai n : ");
         n = sc.nextInt();
@@ -10,8 +10,7 @@ public class uts {
         m = sc.nextInt();
 
         for (int i = 1; i <= m; i++) {
-            nilai = n * n;
-            total += nilai;
+            total *= n;
         }
         System.out.println("hasil pangkat : " + total);
     }
