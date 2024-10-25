@@ -17,6 +17,6 @@ public class uts {
             System.out.println("hasil pangkat : " + total);
             System.out.println("=== PERHITUNGAN SELESAI ===");
             break;
-        }
+            } 
     }
 }
