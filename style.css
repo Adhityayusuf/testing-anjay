@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(77, 205, 30);
+    align-items: center; /* vertikal */
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.sc a{
+    text-decoration: none;
+    
+}
+
+.sc a:hover{
+    color: black;
+}
+
+.introduction {
+    margin: 100px;
+    display: flex;
+    width: 100vw;
+    padding: 1em;
+}
+
+section h1 span {
+    color: blue;
+}
+
+section div {
+    width: 50%;
+}
+
+section img {
+    width: 50%;
+    padding: 1em;
+}
