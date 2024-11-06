@@ -9,7 +9,7 @@ public class Percobaan {
         double ratPer = 0, ratRes = 0, ratAll = 0;
 
         for (int i = 0; i < data.length; i++) {
-            System.out.println("\nPertanyaan ke-" + (i + 1 ));
+            System.out.println("Pertanyaan ke-" + (i + 1 ));
             for (int j = 0; j < data[0].length; j++) {
                 System.out.print("Masukkan Respon (1-5) ke-" + (j + 1) + " : ");
                 data [i][j] = sc.nextInt();
@@ -19,6 +19,8 @@ public class Percobaan {
                 pertanyaan [i] += data [i][j];
                 }
             }
+            System.out.println();
+            
         }
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 6; j++) {
