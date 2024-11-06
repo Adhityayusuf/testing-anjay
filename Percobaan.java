@@ -9,11 +9,15 @@ public class Percobaan {
         double ratPer = 0, ratRes = 0, ratAll = 0;
 
         for (int i = 0; i < data.length; i++) {
-            System.out.println("Pertanyaan ke-" + (i + 1 ));
+            System.out.println("\nPertanyaan ke-" + (i + 1 ));
             for (int j = 0; j < data[0].length; j++) {
                 System.out.print("Masukkan Respon (1-5) ke-" + (j + 1) + " : ");
                 data [i][j] = sc.nextInt();
+                if (data [i][j] > 5 || data [i][j] < 1) {
+                    j--;
+                } else {
                 pertanyaan [i] += data [i][j];
+                }
             }
         }
         for (int i = 0; i < 10; i++) {
@@ -21,15 +25,21 @@ public class Percobaan {
                 respon [i] += data [j][i];
             }
         }
+        System.out.println();
+
         for (int i = 0; i < 6; i++) {
             ratPer = pertanyaan[i] / 10;
             totalper += pertanyaan[i];
             System.out.println("Rata-rata dari pertanyaan ke-" + (i + 1) + " : " + ratPer);
         }
+        System.out.println();
+
         for (int i = 0; i < 10; i++) {
             ratRes = respon[i] / 6;
             System.out.println("Rata-rata dari respon ke-" + (i + 1) + " : " + ratRes);
         }
+        System.out.println();
+
         ratAll = totalper / 60;
         System.out.println("Rata-rata keseluruhan : " + ratAll);
     }
