@@ -7,14 +7,13 @@ public class untukGyzna {
         System.out.println("Apakah anda ingin mengirim pesan ? ");
         tanya = sc.nextBoolean();
         sc.nextLine();
-
         if ( tanya == true) {
             System.out.print("Masukkan nama orang nya : ");
             nama = sc.nextLine();
             System.out.println();
             System.out.println();
             System.out.println();
-            System.out.println("===== SELAMAT ULANG TAHUN," + nama + " =====");
+            System.out.println("===== SELAMAT ULANG TAHUN, " + nama + " =====");
             System.out.println("selamat ulang tahun ya cantik, Aku bersyukur atas kehadiranmu dalam hidupku");
             System.out.println("yang selalu membawa kebahagiaan dan ketenangan.Semoga di usia baru ini, kamu selalu diberikan");
             System.out.println("kesehatan, kebahagiaan, dan keberkahan dalam setiap langkahmu.");
