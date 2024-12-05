@@ -1,8 +1,8 @@
 public class flow2 {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 5;
         for (int i = 0; i < n; i++) {
-            for (int j = 9; j > i; j--) {
+            for (int j = 4; j > i; j--) {
                 System.out.print(" ");
             }
             for (int k = 0; k <=i; k++) {
