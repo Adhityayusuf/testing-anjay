@@ -32,6 +32,19 @@ public class KaliMatriks {
             }
         }
         for (int i = 0; i < barisA; i++) {
+            for (int j = 0; j < kolomA; j++) {
+                System.out.print(matriksA[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for (int i = 0; i < barisB; i++) {
+            for (int j = 0; j < kolomB; j++) {
+                System.out.print(matriksB[i][j] + " ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < barisA; i++) {
             for (int j = 0; j < kolomB; j++) {
                 hasilPerkalian[i][j] = 0;
                 for (int k = 0; k < kolomA; k++) {
